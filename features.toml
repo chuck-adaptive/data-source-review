@@ -1,0 +1,60 @@
+[[products]]
+name = "Polygon.io"
+link = "https://polygon.io/"
+free_offerings = [
+    "5 API Calls / Minute",
+    "End of Day Data",
+    "2 Years Historical Data",
+    "100% Market Coverage",
+    "Reference Data",
+    "Fundamental Data",
+    "Corporate Actoins",
+    "Aggregate Bars"
+]
+client_libraries = [
+    "Python",
+    "Go",
+    "Javascript",
+    "PHP",
+    "Kotlin"
+]
+protocols = ["REST", "WebSocket"]
+author_comments = "Promising listing of available products"
+
+[[products]]
+name = "MarketData"
+link = "https://docs.marketdata.app/api/"
+free_offerings = [
+    "100 Daily Requests",
+    "10 Daily Symbols",
+    "1 Year Historical Data",
+    "1 Daily Backtest",
+    "Delayed Data"
+]
+client_libraries = ["Google Sheets"]
+protocols = ["REST", "WebSocket"]
+author_comments = "Google Sheets has its own function - GOOGLEFINANCE. Google Finance is no longer an API, so if you want to use the Google data I'd do it in Sheets."
+
+[[products]]
+name = "Quandl"
+link = "https://data.nasdaq.com/publishers/QDL"
+free_offerings = ["Bulk Data Sets", "Alternative Data"]
+client_libraries = ["R", "Ruby"]
+protocols = ["REST"]
+author_comments = "Great source for quantitative analysis against data sets, not live ticking data"
+
+[[products]]
+name = "Nessie" 
+link = "http://api.nessieisreal.com/"
+free_offerings = ["Mock Bank API", "Mock Bank Customer Data", "Mock Enterprise Data"]
+client_libraries = ["iOS", "Javascript", "Ruby"]
+protocols = ["REST"]
+author_comments = "The client libraries are very old. This is a nice product however, could be very useful for a specific use case"
+
+[[products]]
+name = "Rapid API - Quotient"
+link = "https://rapidapi.com/dubois4and/api/quotient"
+free_offerings = ["Equity", "Options", "Indexes", "Forex", "Crypto", "EOD", "Intraday"]
+client_libraries = ["VS Code Plugin"]
+protocols = ["REST"]
+author_comments = "Rapid API is a generic API provider; Quotient is one API available from them which provides financial data"

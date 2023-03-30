@@ -1,0 +1,18 @@
+{
+  "name": "data-source-review",
+  "version": "0.1.0",
+  "description": "Review the things here",
+  "scripts": {
+    "build": "node --loader tsx ./build.ts",
+    "test": "node --loader tsx --test --no-warnings array-to-html-ul.test.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "18.15.7",
+    "markdown-table": "^3.0.3",
+    "toml": "3.0.0",
+    "tsx": "3.12.6"
+  }
+}
