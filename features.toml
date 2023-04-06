@@ -14,7 +14,7 @@ free_offerings = [
 client_libraries = [
     "Python",
     "Go",
-    "Javascript",
+    "TypeScript",
     "PHP",
     "Kotlin"
 ]

@@ -2,7 +2,7 @@ import toml from 'toml'
 import fs from 'fs'
 import { markdownTable } from 'markdown-table'
 
-import arrayToHtmlUl from './array-to-html-ul'
+import { nameAndUrlToMdLink, arrayToHtmlUl } from './utils';
 
 interface ITomlDataSourceEntry {
     name: string;
@@ -13,7 +13,7 @@ interface ITomlDataSourceEntry {
     author_comments: string;
 }
 
-const HEADER_ROW = ['Name', 'Link', 'Free Offerings', 'Client Libraries', 'Protocols', 'Author Comments']
+const HEADER_ROW = ['Product', 'Free Offerings', 'Client Libraries', 'Protocols', 'Author Comments']
 const SEED_PHRASE = '{{SEED_PHRASE}}'
 
 try {
@@ -31,8 +31,7 @@ try {
     const tableContent: string[][] = [HEADER_ROW]
     parsedToml.products.forEach((dataSource: ITomlDataSourceEntry) => {
         const dataSourceRow = [
-            dataSource.name,
-            dataSource.link,
+            nameAndUrlToMdLink(dataSource.name, dataSource.link),
             arrayToHtmlUl(dataSource.free_offerings),
             arrayToHtmlUl(dataSource.client_libraries),
             arrayToHtmlUl(dataSource.protocols),

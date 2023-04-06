@@ -1,10 +1,10 @@
 {
   "name": "data-source-review",
   "version": "0.1.0",
-  "description": "Review the things here",
+  "description": "Review of free Financial Data Sources",
   "scripts": {
     "build": "node --loader tsx ./build.ts",
-    "test": "node --loader tsx --test --no-warnings array-to-html-ul.test.ts"
+    "test": "node --loader tsx --test --no-warnings utils.test.ts"
   },
   "keywords": [],
   "author": "",
